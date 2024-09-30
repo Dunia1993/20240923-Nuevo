@@ -3,11 +3,12 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: " titulo titulo titulo titulo titulo"
-        " imagen texto texto texto texto"
-        " imagen texto texto texto texto"
-        /* " imagen texto texto texto texto" */
+        " imagen imagen texto texto texto"
+        " imagen imagen texto texto texto"
         " enlace enlace enlace enlace enlace";
     background-color: #ECD2A2;
+    align-items: center;
+    justify-content: center;
 }
 
 .titulo {
@@ -15,8 +16,8 @@ main {
     display: grid;
     color: #c60404;
     font-family: "Inknut Antiqua", serif;
-  font-weight: 900;
-  font-style: normal;
+    font-weight: 900;
+    font-style: normal;
     
 }
 
@@ -24,6 +25,9 @@ main {
     display: grid;
     grid-area: imagen;
     width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-left: 3em;
     
 }
 
@@ -42,7 +46,7 @@ main {
     font-size: 30px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -63,8 +67,9 @@ main {
 }
 
 #tres{  
-   align-content: center;
+   align-content: flex-start;
    font-size: 1.5em;
-   /* padding: 50px; */
-   font-variant: small-caps;
+   font-family: "Hanuman", serif;
+   font-weight: 400;
+   font-style: normal;
 }
