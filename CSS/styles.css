@@ -1,0 +1,70 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: " titulo titulo titulo titulo titulo"
+        " imagen texto texto texto texto"
+        " imagen texto texto texto texto"
+        /* " imagen texto texto texto texto" */
+        " enlace enlace enlace enlace enlace";
+    background-color: #ECD2A2;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: grid;
+    color: #c60404;
+    font-family: "Inknut Antiqua", serif;
+  font-weight: 900;
+  font-style: normal;
+    
+}
+
+.imagen {
+    display: grid;
+    grid-area: imagen;
+    width: 100%;
+    
+}
+
+.texto {
+    display: grid;
+    color: #01090c;
+    grid-area: texto;
+}
+
+.enlace {
+    display: grid;
+    color: #000000;
+    grid-area: enlace;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+#uno {
+    text-align: center;
+    font-size: 2em;
+    font: normal;
+}
+
+#dos{
+    width: 23em; 
+    height: auto;
+    border-radius: 1em;
+    border: solid;
+    border-color: #E50B0B;
+    border-width: 5px;
+    
+}
+
+#tres{  
+   align-content: center;
+   font-size: 1.5em;
+   /* padding: 50px; */
+   font-variant: small-caps;
+}
